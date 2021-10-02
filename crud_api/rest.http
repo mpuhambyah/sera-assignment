@@ -1,0 +1,28 @@
+
+###CREATE
+POST http://localhost:3000/product
+Content-Type: application/json
+
+{
+    "title": "Product 3",
+    "price": 2000
+}
+
+###READ
+GET http://localhost:3000/product/
+
+###READ BY ID
+GET http://localhost:3000/product/6155aba063408f3a736b6517
+
+###UPDATE
+PATCH http://localhost:3000/product/6155aba063408f3a736b6517
+Content-Type: application/json
+
+{
+    "title": "Product 2 Updated",
+    "price": 3000
+}
+
+###DELETE
+DELETE http://localhost:3000/product/6155aba063408f3a736b6517
+

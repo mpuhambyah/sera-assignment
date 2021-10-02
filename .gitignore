@@ -1,0 +1,5 @@
+auth_api/node_modules
+crud_api/node_modules
+crud_api_firebase/node_modules
+crud_api_testing/node_modules
+filter_object/node_modules

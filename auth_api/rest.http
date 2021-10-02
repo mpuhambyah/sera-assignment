@@ -1,0 +1,36 @@
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzMxNDY1MDQsImV4cCI6MTYzMzE1MDEwNCwiYXVkIjoiNjE1NzQwOWNlYmY5ZWEyMTUwMzkyYjRmIiwiaXNzIjoidGVzdC5jb20ifQ.R6FJN1Xsdu0VabQJwZRlg_wC0wtpJsSru8C7PyduqXY
+
+###LOGIN
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "test9@gmail.com",
+    "password": "123"
+}
+
+###REGISTER
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "test11@gmail.com",
+    "password": "123"
+}
+
+###REFRESH TOKEN
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzMxMTUxNzYsImV4cCI6MTY2NDY3Mjc3NiwiYXVkIjoiNjE1NzQwOWNlYmY5ZWEyMTUwMzkyYjRmIiwiaXNzIjoidGVzdC5jb20ifQ.Z0tMRZGWcnrwOsW2mJzuFxs9YqjuCbMRW9c3W5gEaSw"
+}
+
+###REFRESH TOKEN
+DELETE http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzMxNDY1NzAsImV4cCI6MTY2NDcwNDE3MCwiYXVkIjoiNjE1NzUzMWIxNzQ0YjI5ZDUyYWY2NmI4IiwiaXNzIjoidGVzdC5jb20ifQ.37j_aMBDf4y5DwNpgBvJKEzrF_S95t0AvI1zHVCN-2M"
+}
